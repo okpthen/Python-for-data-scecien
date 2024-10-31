@@ -3,6 +3,7 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
+
 def transpose(img_array):
     rotated_img = []
     for x in range(img_array.shape[1]):  # iterate over the columns
@@ -41,6 +42,6 @@ def main():
     plt.imshow(array, "gray")
     plt.savefig('picture/output_image.png')
 
+
 if __name__ == "__main__":
     main()
-

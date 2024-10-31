@@ -2,6 +2,7 @@ from load_image import ft_load
 from PIL import Image
 from pimp_image import ft_invert, ft_red, ft_blue, ft_green, ft_grey
 
+
 def ft_print_image(array, str):
     image = Image.fromarray(array)
     file_name = "pictures/" + str + ".png"

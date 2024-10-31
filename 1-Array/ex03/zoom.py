@@ -4,8 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-
-
 def main():
     try:
         image = ft_load('../animal.jpeg')
@@ -14,8 +12,6 @@ def main():
         exit()
 
     print(image)
-
-
     image = Image.fromarray(image)
     image = image.crop((450, 100, 850, 500))
     array = np.array(image)

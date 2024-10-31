@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 
+
 setup(
     name="ft_package",
     version='0.0.1',

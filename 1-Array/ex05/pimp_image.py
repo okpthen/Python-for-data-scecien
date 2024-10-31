@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def ft_invert(array):
     return 255 - array
 
@@ -9,16 +10,21 @@ def ft_red(array):
     red_array[..., 1] = 0
     red_array[..., 2] = 0
     return red_array
+
+
 def ft_green(array):
     green_array = array.copy()
     green_array[..., 0] = 0
     green_array[..., 2] = 0
     return green_array
+
+
 def ft_blue(array):
     blue_array = array.copy()
     blue_array[..., 0] = 0
     blue_array[..., 1] = 0
     return blue_array
+
 
 def ft_grey(array):
     grey_array = array.copy()
