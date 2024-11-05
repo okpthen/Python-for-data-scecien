@@ -11,14 +11,14 @@ def ft_var(array, ave):
 
 def quartile(array):
     n = len(array)
-    if n % 4 == 0:
-        q1 = (array[n // 4 - 1] + array[n // 4]) / 2
-    else:
+    if n % 4 == 1:
         q1 = array[n // 4]
-    if n % 4 == 0:
-        q3 = (array[3 * n // 4 - 1] + array[3 * n // 4]) / 2
     else:
+        q1 = (array[n // 4] + array[n // 4 + 1]) / 2
+    if n % 4 == 1:
         q3 = array[3 * n // 4]
+    else:
+        q3 = (array[3 * n // 4 - 1] + array[3 * n // 4]) / 2
     return [float(q1), float(q3)]
 
 
