@@ -3,6 +3,7 @@ import string
 
 
 def count(str):
+    """count"""
     upper = 0
     lower = 0
     puncuation = 0
@@ -28,9 +29,10 @@ def count(str):
 
 
 def main():
+    """main"""
     if len(sys.argv) == 1:
-        str = input("What is the text to count?\n")
-        str += "\n"
+        print("What is the text to count?")
+        str = sys.stdin.read()
     elif len(sys.argv) == 2:
         str = sys.argv[1]
     else:

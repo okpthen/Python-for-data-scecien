@@ -1,4 +1,5 @@
 def ft_filter(func, it):
+    """filter"""
     if not func:
         return (item for item in it if item)
     else:
@@ -6,4 +7,5 @@ def ft_filter(func, it):
 
 
 def count_in_list(lst: list, s: str):
+    """count in list"""
     return len(list(ft_filter(lambda x: x == s, lst)))

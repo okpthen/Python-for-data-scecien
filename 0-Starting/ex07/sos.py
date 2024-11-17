@@ -42,9 +42,7 @@ NESTED_MORSE = {
 
 
 def main():
-    """
-        Take a sys.argv input and output sys.argv[1] as morse
-    """
+    """Take a sys.argv input and output sys.argv[1] as morse"""
     if len(sys.argv) > 2:
         print("AssertionError: more than two argument are provided")
         exit(0)

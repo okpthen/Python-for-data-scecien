@@ -3,6 +3,7 @@ import sys
 
 
 def main():
+    """main"""
     if len(sys.argv) > 3:
         print("AssertionError: more than two argument are provided")
         exit(0)
